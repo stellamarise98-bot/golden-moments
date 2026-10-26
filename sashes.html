@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shop classic, custom, satin, group and bulk graduation sashes. Personalize yours for your special day.">
+    <title>Graduation Sashes | Golden Moments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Loading screen -->
+    <div class="site-loader" aria-label="Loading Golden Moments">
+      <span aria-hidden="true">
+        🎓
+      </span>
+      <p>
+        Getting your celebration ready…
+      </p>
+    </div>
+    <!-- Shared navigation -->
+    <div class="offer-strip">
+      A little extra reason to celebrate: <strong>Book a shoot and get 10% off your sash</strong>
+    </div>
+    <nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand-mark" href="index.html">
+          <span class="brand-icon">
+            ✦
+          </span>
+          Golden <em>Moments</em>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="sashes.html">
+                Sashes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photography.html">
+                Photography
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photography.html#gallery">
+                Gallery
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <button class="cart-trigger" type="button" data-open-cart aria-label="Open shopping cart">
+                Bag
+                <span class="cart-count" data-cart-count>
+                  0
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Sash shop introduction -->
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">
+            Made to be worn with pride
+          </p>
+          <h1>
+            A sash as
+            <span>
+              one-of-a-kind
+            </span>
+            as you.
+          </h1>
+          <p>
+            Choose a favorite or make it yours from the very first stitch.
+          </p>
+        </div>
+      </section>
+      <!-- Product filters and cards -->
+      <section class="section-pad shop-section">
+        <div class="container">
+          <div class="shop-toolbar">
+            <div>
+              <p class="eyebrow">
+                Find your perfect fit
+              </p>
+              <h2 class="section-title">
+                The sash
+                <span>
+                  collection
+                </span>
+              </h2>
+            </div>
+            <div class="filter-group" role="group" aria-label="Filter sashes by category">
+              <button class="filter-button active" data-filter="all" aria-pressed="true">
+                All
+              </button>
+              <button class="filter-button" data-filter="classic" aria-pressed="false">
+                Classic
+              </button>
+              <button class="filter-button" data-filter="custom" aria-pressed="false">
+                Custom
+              </button>
+              <button class="filter-button" data-filter="premium" aria-pressed="false">
+                Premium Satin
+              </button>
+              <button class="filter-button" data-filter="group" aria-pressed="false">
+                Group &amp; Bulk
+              </button>
+            </div>
+          </div>
+          <div class="row g-4" data-product-grid>
+            <div class="col-sm-6 col-lg-4 product-item" data-category="classic">
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="images/goldenclassic.png" alt="Classic burgundy graduation sash displayed on a graduate">
+                  <span class="product-tag">
+                    Bestseller
+                  </span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">
+                    Classic
+                  </span>
+                  <h3>
+                    Golden Classic
+                  </h3>
+                  <p>
+                    Our signature look with a timeless gold finish.
+                  </p>
+                  <div class="product-bottom">
+                    <strong data-sash-price="classic"></strong>
+                    <button class="btn btn-small btn-gold" data-add-product data-product-id="classic" data-product-name="Golden Classic Sash">
+                      Add to bag
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 product-item" data-category="custom">
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="images/custom.png" alt="Graduate wearing a personalized graduation stole">
+                  <span class="product-tag">
+                    Make it yours
+                  </span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">
+                    Custom
+                  </span>
+                  <h3>
+                    Signature Custom
+                  </h3>
+                  <p>
+                    Your name, your course, your colors. All you.
+                  </p>
+                  <div class="product-bottom">
+                    <strong data-sash-price="custom"></strong>
+                    <button class="btn btn-small btn-gold" data-add-product data-product-id="custom" data-product-name="Signature Custom Sash">
+                      Add to bag
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 product-item" data-category="premium">
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="images/satin.png" alt="Elegant satin details ready for a graduation celebration">
+                  <span class="product-tag">
+                    Luxe finish
+                  </span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">
+                    Premium Satin
+                  </span>
+                  <h3>
+                    Radiance Satin
+                  </h3>
+                  <p>
+                    Silky satin, rich color, and an extra-special sheen.
+                  </p>
+                  <div class="product-bottom">
+                    <strong data-sash-price="satin"></strong>
+                    <button class="btn btn-small btn-gold" data-add-product data-product-id="satin" data-product-name="Radiance Satin Sash">
+                      Add to bag
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 product-item" data-category="group">
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="images/set of 5.png" alt="Friends celebrating their graduation together">
+                  <span class="product-tag">
+                    For your crew
+                  </span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">
+                    Group &amp; Bulk
+                  </span>
+                  <h3>
+                    Squad Goals (set of 5)
+                  </h3>
+                  <p>
+                    Celebrate side by side with a matching set.
+                  </p>
+                  <div class="product-bottom">
+                    <strong data-sash-price="group"></strong>
+                    <button class="btn btn-small btn-gold" data-add-product data-product-id="group" data-product-name="Squad Goals Sash Set (5)">
+                      Add to bag
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 product-item" data-category="classic">
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="images/group of 10.png" alt="University graduates celebrating a proud milestone">
+                  <span class="product-tag">
+                    Fresh favorite
+                  </span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">
+                    Classic
+                  </span>
+                  <h3>
+                    Sunrise Gold
+                  </h3>
+                  <p>
+                    Warm, bright gold for a future full of possibility.
+                  </p>
+                  <div class="product-bottom">
+                    <strong data-sash-price="sunrise"></strong>
+                    <button class="btn btn-small btn-gold" data-add-product data-product-id="sunrise" data-product-name="Sunrise Gold Sash">
+                      Add to bag
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 product-item" data-category="group">
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=850&q=80" alt="Graduates in a joyful group portrait">
+                  <span class="product-tag">
+                    Bulk orders
+                  </span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">
+                    Group &amp; Bulk
+                  </span>
+                  <h3>
+                    Class of Us (set of 10)
+                  </h3>
+                  <p>
+                    Matching keepsakes for your entire graduating class.
+                  </p>
+                  <div class="product-bottom">
+                    <strong data-sash-price="bulk"></strong>
+                    <button class="btn btn-small btn-gold" data-add-product data-product-id="bulk" data-product-name="Class of Us Sash Set (10)">
+                      Add to bag
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Sash customization form -->
+          <div class="custom-form-wrap" id="custom-sash">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-5">
+                <p class="eyebrow">
+                  A keepsake with your name on it
+                </p>
+                <h2 class="section-title">
+                  Create your
+                  <span>
+                    custom sash.
+                  </span>
+                </h2>
+                <p>
+                  Tell us the details and we’ll follow up to confirm your colors, spelling, and design before printing.
+                </p>
+                <p class="custom-note">
+                  Custom sashes start at <strong data-sash-price="custom"></strong>
+                </p>
+              </div>
+              <div class="col-lg-7">
+                <form class="form-card" data-custom-form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="customName">
+                        Name to print
+                      </label>
+                      <input id="customName" name="name" required maxlength="40" placeholder="e.g. Amina Wanjiku">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="customSchool">
+                        School or course
+                      </label>
+                      <input id="customSchool" name="school" required maxlength="60" placeholder="e.g. Maasai Mara University">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="customYear">
+                        Graduation year
+                      </label>
+                      <input id="customYear" name="year" type="number" min="2020" max="2040" required placeholder="2026">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="customColor">
+                        Sash color
+                      </label>
+                      <select id="customColor" name="color" required>
+                        <option value="">
+                          Choose a color
+                        </option>
+                        <option>
+                          Burgundy &amp; gold
+                        </option>
+                        <option>
+                          Emerald &amp; gold
+                        </option>
+                        <option>
+                          Classic black &amp; gold
+                        </option>
+                        <option>
+                          Custom colors (we'll call)
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="sashLength">
+                        Sash length
+                      </label>
+                      <select id="sashLength" name="length" required>
+                        <option value="">
+                          Choose a length
+                        </option>
+                        <option>
+                          Standard — 150 cm
+                        </option>
+                        <option>
+                          Long — 170 cm
+                        </option>
+                        <option>
+                          Extra long — 190 cm
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="sashMessage">
+                        Extra message (optional)
+                      </label>
+                      <input id="sashMessage" name="message" maxlength="60" placeholder="A short note or honors">
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-gold" type="submit">
+                        Send my custom request
+                      </button>
+                      <p class="form-message" data-custom-message role="status">
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Shared footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <a class="navbar-brand brand-mark footer-brand" href="index.html">
+              <span class="brand-icon">
+                ✦
+              </span>
+              Golden <em>Moments</em>
+            </a>
+            <p>
+              For every late night, every brave step, and every bright beginning. We’re here to help you celebrate.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">
+              Explore
+            </h2>
+            <a href="sashes.html">
+              Shop sashes
+            </a>
+            <a href="photography.html">
+              Photography
+            </a>
+            <a href="photography.html#gallery">
+              Gallery
+            </a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">
+              Here for you
+            </h2>
+            <a href="index.html#about">
+              Our story
+            </a>
+            <a href="contact.html">
+              Contact &amp; FAQ
+            </a>
+            <a href="contact.html#newsletter">
+              Newsletter
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="footer-heading">
+              Stay in the moment
+            </h2>
+            <p>
+              Thoughtful ideas and graduation-day inspiration, occasionally.
+            </p>
+            <a class="footer-cta" href="contact.html#newsletter">
+              Join our newsletter →
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>
+            ©
+            <span data-year>
+            </span>
+            Golden Moments. Made with pride.
+          </span>
+          <span>
+            Celebrate how far you’ve come. ✦
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- Shared cart drawer -->
+    <div class="cart-backdrop" data-cart-backdrop>
+    </div>
+    <aside class="cart-drawer" data-cart-drawer aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">
+            Your celebration
+          </p>
+          <h2>
+            Your bag
+            <span class="cart-count" data-cart-count>
+              0
+            </span>
+          </h2>
+        </div>
+        <button class="icon-button" type="button" data-close-cart aria-label="Close cart">
+          ×
+        </button>
+      </div>
+      <div class="cart-items" data-cart-items>
+      </div>
+      <div class="cart-summary" data-cart-summary>
+      </div>
+      <form class="checkout-form" data-checkout-form>
+        <h3>
+          Ready when you are
+        </h3>
+        <label for="checkoutName">
+          Full name
+        </label>
+        <input id="checkoutName" name="name" required autocomplete="name">
+        <label for="checkoutPhone">
+          Phone
+        </label>
+        <input id="checkoutPhone" name="phone" type="tel" required autocomplete="tel">
+        <label for="checkoutAddress">
+          Delivery address
+        </label>
+        <textarea id="checkoutAddress" name="address" rows="2" required>
+        </textarea>
+        <label for="checkoutPayment">
+          Payment method
+        </label>
+        <select id="checkoutPayment" name="payment" required>
+          <option value="">
+            Choose payment method
+          </option>
+          <option>
+            M-Pesa
+          </option>
+          <option>
+            Card
+          </option>
+          <option>
+            Pay on delivery
+          </option>
+        </select>
+        <button class="btn btn-gold w-100 mt-3" type="submit">
+          Place my order
+        </button>
+        <p class="form-message" data-checkout-message role="status">
+        </p>
+      </form>
+    </aside>
+    <a class="whatsapp-float" href="https://wa.me/254700000000" aria-label="Contact us on WhatsApp">
+      ☏
+    </a>
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">
+      ↑
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/script.js"></script>
+  </body>
+</html>
