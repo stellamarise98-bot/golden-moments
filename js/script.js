@@ -207,6 +207,40 @@ function initializeCart() {
       setFormMessage(message, "Add an item to your bag before checking out.", true);
       return;
     }
+ const data = Object.fromEntries(new FormData(checkoutForm));
+
+  const sashSubtotal = cart
+    .filter((item) => item.type === "sash")
+    .reduce((sum, item) => sum + item.price * (item.quantity || 1), 0);
+  const hasBooking = cart.some((item) => item.type === "booking");
+  const discount = hasBooking && sashSubtotal > 0 ? Math.round(sashSubtotal * PRICES.sashDiscountRate) : 0;
+  const dueNow = sashSubtotal + PRICES.sashDeliveryFee + (hasBooking ? PRICES.photographyDeposit : 0) - discount;
+
+  const itemLines = cart.map((item) =>
+    `- ${item.name} x${item.quantity || 1} (${formatCurrency(item.price * (item.quantity || 1))})` +
+    (item.details ? ` [${item.details}]` : "")
+  );
+
+  sendToWhatsApp([
+    "*New order*",
+    `Name: ${data.name}`,
+    `Phone: ${data.phone}`,
+    `Address: ${data.address}`,
+    `Payment: ${data.payment}`,
+    "",
+    "*Items*",
+    ...itemLines,
+    "",
+    `*Due now: ${formatCurrency(dueNow)}*`
+  ]);
+
+
+
+
+
+
+
+
     setFormMessage(message, "Thank you! Your order is confirmed. We’ll be in touch shortly.");
     cart = [];
     saveCart(cart);
@@ -216,6 +250,7 @@ function initializeCart() {
 
   renderCart();
 }
+
 
 function renderSummary(drawer, cart) {
   const summary = drawer.querySelector("[data-cart-summary]");
@@ -375,4 +410,13 @@ function setFormMessage(element, message, isError = false) {
 
 function formatCurrency(amount) {
   return `KSh ${new Intl.NumberFormat("en-KE").format(amount)}`;
+}
+
+
+const OWNER_WHATSAPP = "254112297516";
+
+function sendToWhatsApp(lines) {
+  const text = lines.join("\n");
+  const url = `https://wa.me/${OWNER_WHATSAPP}?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank");
 }
