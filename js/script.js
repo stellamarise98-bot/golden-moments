@@ -1,15 +1,15 @@
 /* Golden Moments: prices and fees are kept together here for easy updates. */
 const PRICES = {
-  sashDeliveryFee: 350,
+  sashDeliveryFee: 0,
   photographyDeposit: 1000,
   sashDiscountRate: 0.10,
   sashes: {
-    classic: 2500,
-    custom: 3200,
-    satin: 4500,
-    group: 10000,
-    sunrise: 2800,
-    bulk: 18000
+    classic: 600,
+    custom: 600,
+    satin: 600,
+    group: 2800,
+    sunrise: 600,
+    bulk: 5600
   },
   packages: {
     basic: 5000,
