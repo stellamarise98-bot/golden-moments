@@ -306,14 +306,25 @@ function initializeFilters() {
 
 function initializeForms() {
   const customForm = document.querySelector("[data-custom-form]");
-  customForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const values = new FormData(customForm);
-    const details = `${values.get("name")} · ${values.get("school")} · Class of ${values.get("year")}`;
-    const message = customForm.querySelector("[data-custom-message]");
-    setFormMessage(message, `Thanks! Your custom sash request (${details}) is ready. We’ll contact you to confirm the design.`);
-    customForm.reset();
-  });
+customForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const values = new FormData(customForm);
+  const details = `${values.get("name")} · ${values.get("school")} · Class of ${values.get("year")}`;
+  const message = customForm.querySelector("[data-custom-message]");
+
+  sendToWhatsApp([
+    "*Custom sash request*",
+    `Name to print: ${values.get("name")}`,
+    `School/course: ${values.get("school")}`,
+    `Year: ${values.get("year")}`,
+    `Color: ${values.get("color")}`,
+    `Length: ${values.get("length")}`,
+    `Message: ${values.get("message") || "none"}`
+  ]);
+
+  setFormMessage(message, `Thanks! Your custom sash request (${details}) is ready. Tap Send in WhatsApp to confirm.`);
+  customForm.reset();
+});
 
   const bookingForm = document.querySelector("[data-booking-form]");
   bookingForm?.addEventListener("submit", (event) => {
