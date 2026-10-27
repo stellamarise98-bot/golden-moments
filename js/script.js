@@ -413,7 +413,7 @@ function formatCurrency(amount) {
 }
 
 
-const OWNER_WHATSAPP = "25412297516";
+const OWNER_WHATSAPP = "254112297516";
 
 function sendToWhatsApp(lines) {
   const text = lines.join("\n");
