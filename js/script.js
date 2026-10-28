@@ -4,17 +4,17 @@ const PRICES = {
   photographyDeposit: 1000,
   sashDiscountRate: 0.10,
   sashes: {
-    classic: 600,
-    custom: 600,
-    satin: 600,
-    group: 2800,
-    sunrise: 600,
-    bulk: 5600
+    classic: 500,
+    custom: 500,
+    satin: 500,
+    group: 2300,
+    sunrise: 500,
+    bulk: 4800
   },
   packages: {
-    basic: 5000,
-    standard: 9500,
-    full: 18000
+    basic: 200,
+    standard:300 ,
+    full: 500
   }
 };
 
